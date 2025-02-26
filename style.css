@@ -29,8 +29,7 @@ select {
 }
 
 .search-btn {
-    padding: 15px 20px;
-    font-size: 16px;
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
     background-color: rgb(37, 175, 37);
