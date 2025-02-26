@@ -1,4 +1,3 @@
-// Search Function
 function search(event) {
     if (event.key === 'Enter' || event.type === "click") {
         let inputField = document.getElementById("input");
@@ -11,6 +10,5 @@ function search(event) {
     }
 }
 
-// Event Listeners
 document.getElementById("input").addEventListener("keydown", search);
 document.getElementById("search-btn").addEventListener("click", search);
