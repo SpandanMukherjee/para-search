@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Para Search</title>
+        <link rel="icon" type="image/x-icon" href="images/logo.jpg"/>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+
+        <img src="images/logo.jpg" height="120" width="120" style="margin: auto; display: block; margin-top: 5%">
+
+        <div class="search-box">
+            <select id="search-engine">
+                <option value="https://search.brave.com/search">Brave</option>
+                <option value="https://google.com/search">Google</option>
+                <option value="https://duckduckgo.com/">DuckDuckGo</option>
+                <option value="https://bing.com/search">Bing</option>
+                <option value="https://search.yahoo.com/search">Yahoo</option>
+                <option value="https://ecosia.org/search">Ecosia</option>
+            </select>
+            <input type="text" placeholder="Browse the Internet" onkeydown="search(event, this)" id="input"/>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(64, 61, 77);
+    font-family: Arial, sans-serif;
+}
+
+div.search-box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+input[type="text"], select {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(32, 31, 37);
+    color: antiquewhite;
+}
+
+input[type="text"] {
+    width: 88%;
+}
+
+select {
+    width: 12%;
+    cursor: pointer;
+}
