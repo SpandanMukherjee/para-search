@@ -16,6 +16,7 @@ input[type="text"], select {
     border: grey 2px solid;
     background-color: rgb(32, 31, 37);
     color: antiquewhite;
+    outline: none;
     margin: 10px;
 }
 
