@@ -13,9 +13,10 @@ div.search-box {
 input[type="text"], select {
     padding: 10px;
     font-size: 16px;
-    border: none;
+    border: grey 2px solid;
     background-color: rgb(32, 31, 37);
     color: antiquewhite;
+    margin: 10px;
 }
 
 input[type="text"] {
@@ -25,4 +26,23 @@ input[type="text"] {
 select {
     width: 12%;
     cursor: pointer;
+}
+
+.search-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(37, 175, 37);
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.search-btn:hover {
+    background-color: seagreen;
+}
+
+.search-btn:active {
+    transform: scale(0.95);
 }
