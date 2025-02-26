@@ -1,22 +1,16 @@
-function search(event, ele) {
-    
+// Search Function
+function search(event) {
     if (event.key === 'Enter' || event.type === "click") {
-        let query = encodeURIComponent(ele.value.trim());
-        let engine = document.getElementById('search-engine').value;
-        
+        let inputField = document.getElementById("input");
+        let query = encodeURIComponent(inputField.value.trim());
+        let engine = document.getElementById("search-engine").value;
+
         if (query) {
             window.location.href = `${engine}?q=${query}`;
         }
     }
 }
 
-let searchButton = document.getElementById("search-btn");
-let inputField = document.getElementById("input");
-
-inputField.addEventListener("keydown", function(event) {
-    search(event, inputField);
-});
-
-searchButton.addEventListener("click", function(event) {
-    search({type : "click"}, inputField);
-});
+// Event Listeners
+document.getElementById("input").addEventListener("keydown", search);
+document.getElementById("search-btn").addEventListener("click", search);
