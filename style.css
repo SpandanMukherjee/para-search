@@ -4,13 +4,16 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo {
     height: 195px;
     width: 195px;
     display: block;
-    margin: 5% auto;
+    margin: 2.3% auto;
 }
 
 .search-box {
@@ -18,20 +21,23 @@ body {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 5%;
 }
 
 input[type="text"] {
     margin: 5px 10px;
-    width: 500px;
+    width: 600px;
     height: 39px;
     padding: 10px;
     font-size: 18px;
-    border: 2px solid grey;
+    border: 2px solid rgb(243, 199, 112);
     background-color: rgb(32, 31, 37);
-    color: antiquewhite;
+    color: #FFF5C9;
     outline: none;
     border-radius: 5px;
+}
+
+::placeholder {
+    color: #8B8676;
 }
 
 .search-btn {
@@ -40,14 +46,13 @@ input[type="text"] {
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
-    background-color: rgb(37, 175, 37);
-    color: white;
+    background-color: rgb(243, 199, 112);
     cursor: pointer;
     transition: background 0.3s, transform 0.1s;
 }
 
 .search-btn:hover {
-    background-color: seagreen;
+    background-color: rgb(169, 115, 68);
 }
 
 .search-btn:active {
@@ -56,11 +61,11 @@ input[type="text"] {
 
 .dropdown {
     position: relative;
-    width: 150px;
-    background: #222;
+    width: 180px;
+    background: rgb(243, 199, 112);
     color: white;
     cursor: pointer;
-    padding: 8px;
+    padding: 2px;
     border-radius: 5px;
     text-align: left;
     display: flex;
@@ -69,9 +74,11 @@ input[type="text"] {
 }
 
 .selected-option {
+    font-size: 18px;
+    color: #FFF5C9;
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: 12px;
     border-radius: 5px;
     background-color: rgb(32, 31, 37);
     width: 100%;
@@ -80,6 +87,8 @@ input[type="text"] {
 
 .selected-option img {
     margin-right: 10px;
+    width: 35px;
+    height: 35px;
 }
 
 .selected-option:hover {
@@ -108,11 +117,13 @@ input[type="text"] {
     text-decoration: none;
     color: white;
     transition: background 0.3s;
+    font-size: 18px;
+    color: #FFF5C9;
 }
 
 .options a img {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     margin-right: 10px;
 }
 
