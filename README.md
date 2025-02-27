@@ -1,3 +1,3 @@
 # para-search
 
-Who actually reads the REAMDE? You do? Lame
+Who actually reads the README? You do? Lame
