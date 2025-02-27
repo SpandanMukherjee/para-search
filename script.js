@@ -2,7 +2,7 @@ function search(event) {
     if (event.key === 'Enter' || event.type === "click") {
         let inputField = document.getElementById("input");
         let query = encodeURIComponent(inputField.value.trim());
-        let engine = document.getElementById("search-engine").value;
+        let engine = "https://search.brave.com/search"
 
         if (query) {
             window.location.href = `${engine}?q=${query}`;

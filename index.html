@@ -12,16 +12,21 @@
         <img src="images/logo.jpg" height="198" width="198" style="margin: auto; display: block; margin-top: 5%">
 
         <div class="search-box">
-            <select id="search-engine" style="padding: 9.5px 10px;">
-                <option value="https://search.brave.com/search">Brave</option>
-                <option value="https://google.com/search">Google</option>
-                <option value="https://duckduckgo.com/">DuckDuckGo</option>
-                <option value="https://bing.com/search">Bing</option>
-                <option value="https://search.yahoo.com/search">Yahoo</option>
-                <option value="https://ecosia.org/search">Ecosia</option>
-                <option value="https://www.mojeek.com/search">Mojeek</option>
-                <option value="https://search.excite.com/serp">Excite</option>
-            </select>
+
+            <div class="dropdown">
+
+                <div class="options">
+
+                    <a><img src="images/brave.png" height="30" width="30"></a>
+                    <a><img src="images/google.png" height="30" width="30"></a>
+                    <a><img src="images/duckduckgo.png" height="30" width="30"></a>
+                    <a><img src="images/bing.png" height="30" width="30"></a>
+                    <a><img src="images/yahoo.png" height="30" width="30"></a>
+
+                </div>
+
+            </div>
+
             <input autocomplete="off" type="text" placeholder="Browse the Internet" onkeydown="search(event, this)" id="input"/>
             <button id="search-btn" class="search-btn"><img src="images/search-icon.png" width="25" height="25"></button>
         </div>
