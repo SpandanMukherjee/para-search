@@ -9,26 +9,31 @@
     </head>
     <body>
 
-        <img src="images/logo.jpg" height="198" width="198" style="margin: auto; display: block; margin-top: 5%">
+        <img src="images/logo.jpg" class="logo">
 
         <div class="search-box">
 
             <div class="dropdown">
 
-                <div class="options">
-
-                    <a><img src="images/brave.png" height="30" width="30"></a>
-                    <a><img src="images/google.png" height="30" width="30"></a>
-                    <a><img src="images/duckduckgo.png" height="30" width="30"></a>
-                    <a><img src="images/bing.png" height="30" width="30"></a>
-                    <a><img src="images/yahoo.png" height="30" width="30"></a>
-
+                <div class="selected-option">
+                    <img id="selected-logo" src="images/brave.png" height="30" width="30">
+                    <span id="selected-name"> Brave</span>
                 </div>
 
+                <div class="options">
+                    <a data-url="https://search.brave.com/search"><img src="images/brave.png" height="30" width="30"> Brave</a>
+                    <a data-url="https://google.com/search"><img src="images/google.png" height="30" width="30"> Google</a>
+                    <a data-url="https://duckduckgo.com/"><img src="images/duckduckgo.png" height="30" width="30"> DuckDuckGo</a>
+                    <a data-url="https://bing.com/search"><img src="images/bing.png" height="30" width="30"> Bing</a>
+                    <a data-url="https://search.yahoo.com/search"><img src="images/yahoo.png" height="30" width="30"> Yahoo</a>
+                </div>
             </div>
 
-            <input autocomplete="off" type="text" placeholder="Browse the Internet" onkeydown="search(event, this)" id="input"/>
-            <button id="search-btn" class="search-btn"><img src="images/search-icon.png" width="25" height="25"></button>
+            <input autocomplete="off" type="text" placeholder="Browse the Internet" id="input"/>
+            <button id="search-btn" class="search-btn">
+                <img src="images/search-icon.png" width="25" height="25">
+            </button>
+
         </div>
 
         <script src="script.js"></script>
